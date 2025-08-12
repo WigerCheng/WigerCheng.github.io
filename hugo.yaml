@@ -1,0 +1,12 @@
+baseURL: https://wigercheng.github.io/
+disablePathToLower: true
+languageCode: en-us
+title: Wiger代码手记
+theme : PaperMod
+
+params:
+  homeInfoParams:
+    Title: Wiger代码手记
+    Content: Code!Code!!Code!!!
+  ShowCodeCopyButtons: true
+  
