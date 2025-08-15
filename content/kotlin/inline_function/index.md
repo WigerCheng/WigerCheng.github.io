@@ -29,7 +29,7 @@ fun testInline() {
 	inlinePrintByteCode()  
 }
 ```
-![内联函数字节码](inline_function_decompiled.png)
+![内联函数字节码](./images/inline_function_decompiled.png)
 
 ---
 2. 非函数内联字节码
@@ -42,7 +42,7 @@ fun testNoInline() {
 	printByteCode()  
 }
 ```
-![非函数内联字节码](noinline_function_decompiled.png)
+![非函数内联字节码](./images/noinline_function_decompiled.png)
 
 ## 禁用内联
 - 如果希望只内联一部分传给内联函数的 lambda 表达式参数，那么可以用 `noinline` 修饰符标记不希望内联的函数参数
@@ -56,7 +56,7 @@ fun main() {
 	inlineF({println("Hello")}, {println("World")})  
 }
 ```
-![禁用内敛函数字节码](no_inline_decompiled.png)
+![禁用内敛函数字节码](./images/no_inline_decompiled.png)
 
 > [内联函数与具体化的类型参数 - Kotlin 语言中文站 (kotlincn.net)](https://www.kotlincn.net/docs/reference/inline-functions.html)
 > 
