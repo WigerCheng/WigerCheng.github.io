@@ -1,6 +1,5 @@
 ---
 date: "2025-08-15T18:13:35+08:00"
-draft: true
 title : 'Kotlin内联类'
 ---
 
