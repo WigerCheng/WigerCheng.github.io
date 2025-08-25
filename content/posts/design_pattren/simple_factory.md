@@ -2,9 +2,6 @@
 date: "2025-08-20T15:27:58+08:00"
 title: 简单工厂模式
 ---
-
-# 简单工厂模式
-
 * [图解简单工厂模式](https://design-patterns.readthedocs.io/zh_CN/latest/creational_patterns/simple_factory.html)
 * 定义一个用于创建对象的接口，让子类决定实例化哪一个类。Factory Method使一个类的实例化延迟到其子类。
 
@@ -16,15 +13,15 @@ title: 简单工厂模式
 
 简单工厂模式包含如下角色：
 
-- Factory：工厂角色
+* Factory：工厂角色
 
     工厂角色负责实现创建所有实例的内部逻辑
 
-- Product：抽象产品角色
+* Product：抽象产品角色
 
     抽象产品角色是所创建的所有对象的父类，负责描述所有实例所共有的公共接口
 
-- ConcreteProduct：具体产品角色
+* ConcreteProduct：具体产品角色
 
     具体产品角色是创建目标，所有创建的对象都充当这个角色的某个具体类的实例。
 
