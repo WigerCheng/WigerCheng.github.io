@@ -14,8 +14,8 @@ value class Password(private val s: String)
 // At runtime 'securePassword' contains just 'String' 
 val securePassword = Password("Don't try this in production")
 ```
-![[../../zob-source/kotlin/value_class_1.png]]
-![[../../zob-source/kotlin/value_class_2.png]]
+![[value_class_1.png]]
+![[value_class_2.png]]
 
 ## 成员
 - `value class` 允许声明属性（可计算属性、不支持**幕后属性**）或方法和`init` 初始块。
@@ -86,7 +86,7 @@ fun main() {
     val c = id(f)
 }
 ```
-![[../../zob-source/kotlin/value_class_3.png]]
+![[value_class_3.png]]
 
 ## 破坏性？
 - 编译器会将内联类编译成它们的内联属性，但由于内联属性和原有的属性相冲，出现错误。如
@@ -100,7 +100,7 @@ fun compute(x: UInt) { }
 ```
 两个`compute` 方法将会在JVM平台编译成`public final void compute(int x)`，出现相冲。
 - 解决方法是：编译器将会把内联函数的方法名加上hashcode，形式是`public final void compute-<hashcode>(int x)`。
-	- ![[../../zob-source/kotlin/value_class_4.png]]
+	- ![[value_class_4.png]]
 - 因为这个破坏性，Java调用的时候不知道加的hashcode是什么，通过加`@JvmName`注解给方法一个别名。
 ```kotlin
 @JvmInline
@@ -111,7 +111,7 @@ fun compute(x: Int) { }
 @JvmName("computeUInt")
 fun compute(x: UInt) { }
 ```
-![[../../zob-source/kotlin/value_class_5.png]]
+![[value_class_5.png]]
 
 > [Inline classes | Kotlin Documentation (kotlinlang.org)](https://kotlinlang.org/docs/inline-classes.html)
 > [Design Notes on Kotlin Value Classes](https://github.com/Kotlin/KEEP/blob/master/notes/value-classes.md#design-notes-on-kotlin-value-classes)
