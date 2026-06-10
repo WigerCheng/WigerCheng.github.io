@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: plausible
   locale: en-US
-  baseUrl: WigerCheng.github.io/Blog
+  baseUrl: wigercheng.github.io/blog
   ignorePatterns:
     - private
     - templates
