@@ -15,7 +15,7 @@
 |startRadius|动画开始前剪裁圆形的半径|
 |endRadius|动画结束时的圆形半径|
 
-![[animation/circle_animation.gif|200]]
+![[circle_animation.gif|200]]
 
 ```kotlin
 findViewById<Button>(R.id.btn_circle_scale_down).setOnClickListener {

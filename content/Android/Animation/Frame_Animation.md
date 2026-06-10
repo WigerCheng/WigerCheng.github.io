@@ -8,7 +8,7 @@
 ## 1、准备素材
 将图片资源放在`drawable`文件夹。如图所示👇
 
-![[animation/sourse_location.png]]
+![[sourse_location.png]]
 
 ## 2、编写动画资源文件
 在`drawable`文件夹下新建`frame_anim.xml`文件。文件内容如下
@@ -77,6 +77,6 @@ findViewById<Button>(R.id.btn_start).setOnClickListener {
 ```
 ## 5、效果
 ### no_one_shot
-![[animation/no_one_shot.gif|280]]
+![[no_one_shot.gif|280]]
 ### one_shot
-![[animation/one_shot.gif|280]]
+![[one_shot.gif|280]]

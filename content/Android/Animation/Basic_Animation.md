@@ -3,7 +3,7 @@
 ## Android View 动画框架
 > Animation框架定义了透明度、旋转、缩放和位移几种常见的动面，而且控制的是整个view，实现原理是每次绘制视图时 View 所在的 ViewGroup 中的drawChild 函数获取该 View 的Animation 的 Transformation 值，然后调用 canvas.concat(transformToApply.getMatrix())，通过矩阵运算完成动画帧。如果动画没有完成，就继续调用 invalidate()函数，启动下次绘制來驱动动画，从而完成整个动画的绘制。——《Android群英传》
 
-![[animation/basic_animation.gif|200]]
+![[basic_animation.gif|200]]
 ## 视图动画四种动画方式
 ### AlphaAnimation（透明度动画）
 - 为视图添加透明度的变换动画。
