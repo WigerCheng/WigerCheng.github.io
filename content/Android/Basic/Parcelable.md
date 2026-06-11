@@ -1,5 +1,4 @@
 ---
-date: "2022-03-16T00:00:00Z"
 title: Android序列化之Parcelable
 ---
 

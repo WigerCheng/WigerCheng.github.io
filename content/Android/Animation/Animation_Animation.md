@@ -1,11 +1,14 @@
-#Animation
-
-## Android View 动画框架
-> Animation框架定义了透明度、旋转、缩放和位移几种常见的动面，而且控制的是整个view，实现原理是每次绘制视图时 View 所在的 ViewGroup 中的drawChild 函数获取该 View 的Animation 的 Transformation 值，然后调用 canvas.concat(transformToApply.getMatrix())，通过矩阵运算完成动画帧。如果动画没有完成，就继续调用 invalidate()函数，启动下次绘制來驱动动画，从而完成整个动画的绘制。——《Android群英传》
+---
+tags:
+  - Animation
+title: Android视图动画
+---
+>[!note] Animation框架动画原理
+> Animation框架定义了透明度、旋转、缩放和位移几种常见的动面，而且控制的是整个view，实现原理是每次绘制视图时 View 所在的 ViewGroup 中的drawChild 函数获取该 View 的Animation 的 Transformation 值，然后调用 canvas.concat(transformToApply.getMatrix())，通过矩阵运算完成动画帧。如果动画没有完成，就继续调用 invalidate()函数，启动下次绘制來驱动动画，从而完成整个动画的绘制。
 
 ![[basic_animation.gif|200]]
-## 视图动画四种动画方式
-### AlphaAnimation（透明度动画）
+
+## AlphaAnimation（透明度动画）
 - 为视图添加透明度的变换动画。
 - 构建 `AlphaAnimation` 的2个参数
 
@@ -24,7 +27,7 @@ private fun alphaAnimation(v: View) {
 }
 ```
 
-### RotateAnimation（旋转动画）
+## RotateAnimation（旋转动画）
 - 为视图增加旋转的变换动画。
 - 构建`RotateAnimation`6个参数
 
@@ -63,7 +66,7 @@ private fun rotateSelfAnimation(v: View) {
 }
 ```
 
-### TranslateAnimation（位移动画）
+## TranslateAnimation（位移动画）
 - 为视图移动时增加位移动画。
 - 构建`TranslateAnimation`的8个参数
 
@@ -88,7 +91,7 @@ private fun translateAnimation(v: View) {
 }
 ```
 
-### ScaleAnimation（缩放动画）
+## ScaleAnimation（缩放动画）
 - 为视图的缩放增加动画效果。
 - 构建`ScaleAnimation`的8个参数
 

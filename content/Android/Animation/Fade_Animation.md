@@ -1,13 +1,17 @@
-#Animation 
+---
+title: Android淡入淡出动画
+tags:
+  - Animation
+---
 
-## 淡入淡出动画
 在安卓开发中，常用淡入淡出的动画来显示加载中的效果。比如在加载新闻列表时，先显示骨架屏动画，当请求成功后，骨架屏以淡出的形式消失，新闻列表项以淡入的形式出现。或者是加载图片的时候，默认显示一个空的图片或占位图片，当图片加载成功，占位图片以淡出的形式消失，加载的图片以淡入的形式显示。
 
 一个简单的例子。以Android Logo作为占位图，员工头像为请求的图片。
+
 ![[fade_animate_gif.gif]]
 ## 实现淡入淡出动画
 
-1. 准备两个ImageView
+### 1.准备两个ImageView
 
 一个ImageView显示占位图，一个显示ImageView请求的图片。请求图片的ImageView的visibility默认是`Gone`。
 ```xml
@@ -29,7 +33,7 @@
 </FrameLayout>
 ```
 
-2. 执行动画
+### 2.执行动画
 
 把加载图片的ImageView的visibility设为`VISIBLE`，并执行从透明到不透明的动画，实现淡入效果。占位图的ImageView执行不透明到透明的动画，实现淡出效果，监听动画回调，当动画执行结束后，将占位图的visibility设为`GONE`。
 

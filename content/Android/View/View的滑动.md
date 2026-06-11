@@ -3,7 +3,7 @@
 1. [[#使用 `layout()` 方法实现滑动]]
 2. [[#使用 `offsetLeftAndRight()` 与 `offsetTopAndBottom()`方法实现滑动]]
 3. [[#使用 `scrollTo/scrollBy`|通过View本身提供的`scrollTo/scrollBy`方法来实现滑动]]
-4. [[../../Animation/Basic_Animation#TranslateAnimation（位移动画）|通过动画给View施加平移效果来实现滑动]]
+4. [[Animation_Animation#TranslateAnimation（位移动画）|通过动画给View施加平移效果来实现滑动]]
 5. [[#改变布局参数|通过改变View的LayoutParams使得View重新布局实现滑动]]
 
 ## 使用  `layout()` 方法实现滑动
