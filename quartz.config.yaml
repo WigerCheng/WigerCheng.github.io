@@ -1,12 +1,12 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Wiger's Blog
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
   analytics:
-    provider: plausible
-  locale: en-US
+    provider: null
+  locale: zh-CN
   baseUrl: wigercheng.github.io/blog
   ignorePatterns:
     - private
@@ -83,6 +83,9 @@ plugins:
     layout:
       position: right
       priority: 30
+    options:
+      maxDepth: 6
+      minEntries: 6
   - source: github:quartz-community/crawl-links
     enabled: true
     options:

@@ -9,11 +9,13 @@ tags:
 一个简单的例子。以Android Logo作为占位图，员工头像为请求的图片。
 
 ![[fade_animate_gif.gif]]
+
 ## 实现淡入淡出动画
 
 ### 1.准备两个ImageView
 
 一个ImageView显示占位图，一个显示ImageView请求的图片。请求图片的ImageView的visibility默认是`Gone`。
+
 ```xml
 <FrameLayout
     android:layout_width="match_parent"

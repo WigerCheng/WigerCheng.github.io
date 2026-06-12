@@ -1,7 +1,14 @@
-Android的Service是一个可以在后台执行长时间操作的应用组件。当Service启动后，用户切换到其他应用后它可以在后台继续运行一段时间。
+---
+title: Service
+tags:
+  - Android
+---
+
+Android系统提供了Service的系统组件可以让App在后台执行一些长时间的操作。如数据同步，资源下载，后台听歌，文件I/O同步等等吗还能和contentProvider进行交互。
 
 ## 使用Service
 
+要创建Service其实不复杂，首先要自定义一个Service类继承Service类或者它现有的子类，然后在[[Service  Manifest Element|`AndroidManifest`]]文件中注册我们自定义的Service，最后根据自己的需要去处理服务生命周期的方法。
 
 ## Service 生命周期
 

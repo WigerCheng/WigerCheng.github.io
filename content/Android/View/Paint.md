@@ -1,20 +1,21 @@
 1. `Paint` 类的几个最常用的方法。具体是：
+
 - `Paint.setStyle(Style style)` 设置绘制模式
-	- `Style` 具体来说有三种： `FILL`, `STROKE` 和 `FILL_AND_STROKE` 。
-		- `FILL` 是填充模式（默认值）
-		- `STROKE` 是画线模式（即勾边模式）
-		- `FILL_AND_STROKE` 是两种模式一并使用：既画线又填充。
-	- `paint.setStyle(Paint.Style.STROKE)` ^a53fe8
-	- ![[paint_style.png]]
+  - `Style` 具体来说有三种： `FILL`, `STROKE` 和 `FILL_AND_STROKE` 。
+    - `FILL` 是填充模式（默认值）
+    - `STROKE` 是画线模式（即勾边模式）
+    - `FILL_AND_STROKE` 是两种模式一并使用：既画线又填充。
+  - `paint.setStyle(Paint.Style.STROKE)` ^a53fe8
+  - ![[paint_style.png]]
 - `Paint.setColor(int color)` 设置颜色
-	- `paint.setColor(Color.RED)`
-	- ![[paint_color.png]]
+  - `paint.setColor(Color.RED)`
+  - ![[paint_color.png]]
 - `Paint.setStrokeWidth(float width)` 设置线条宽度
-	- `paint.setStrokeWidth(20)`
-	- ![[paint_stroke_width.jpg]]
+  - `paint.setStrokeWidth(20)`
+  - ![[paint_stroke_width.jpg]]
 - `Paint.setTextSize(float textSize)` 设置文字大小
 - `Paint.setAntiAlias(boolean aa)` 设置抗锯齿开关
-	- `Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);`开启抗锯齿
-	- ![[paint_anti_alias.png]]
+  - `Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);`开启抗锯齿
+  - ![[paint_anti_alias.png]]
 - `Paint.setStrokeCap` 设置点的形状
-	- 端点有圆头 (`ROUND`)、平头 (`BUTT`) 和方头 (`SQUARE`) 三种
+  - 端点有圆头 (`ROUND`)、平头 (`BUTT`) 和方头 (`SQUARE`) 三种

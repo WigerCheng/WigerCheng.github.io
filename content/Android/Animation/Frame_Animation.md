@@ -10,12 +10,15 @@ tags:
 ## 在Android实现帧动画
 
 ### 1、准备素材
+
 将图片资源放在`drawable`文件夹。如图所示👇
 
 ![[sourse_location.png]]
 
 ### 2、编写动画资源文件
+
 在`drawable`文件夹下新建`frame_anim.xml`文件。文件内容如下
+
 ``` xml
 <?xml version="1.0" encoding="utf-8"?>
 <animation-list xmlns:android="http://schemas.android.com/apk/res/android"
@@ -58,7 +61,9 @@ tags:
         android:duration="200" />
 </animation-list>
 ```
+
 ### 3、添加显示帧动画的ImageView
+
 ``` xml
 <ImageView
     android:id="@+id/img_frame"
@@ -66,7 +71,9 @@ tags:
     android:layout_height="wrap_content"
     tools:src="@mipmap/ic_launcher" />
 ```
+
 ### 4、编写实现帧动画的代码
+
 ``` kotlin
 findViewById<ImageView>(R.id.img_frame).apply {
     setBackgroundResource(R.drawable.frame_anim)
@@ -79,8 +86,9 @@ findViewById<Button>(R.id.btn_start).setOnClickListener {
     frameAnimation.start()
 }
 ```
+
 ### 5、效果
-#### no_one_shot
-![[no_one_shot.gif|280]]
-#### one_shot
-![[one_shot.gif|280]]
+
+| no_one_shot | ![[no_one_shot.gif\|280]] |
+| ----------- | ------------------------- |
+| one_shot    | ![[one_shot.gif\|280]]    |

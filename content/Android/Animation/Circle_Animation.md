@@ -8,6 +8,7 @@ tags:
 当您显示或隐藏一组界面元素时，可给用户提供视觉连续性。
 
 ## 使用圆形揭露动画
+
 通过调用`ViewAnimationUtils.createCircularReveal()`返回一个`Animator`实例，调用`animator.start()`显示动画。
 `createCircularReveal()` 动画采用五个参数。
 
