@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: null
   locale: zh-CN
-  baseUrl: wigercheng.github.io/blog
+  baseUrl: wigercheng.github.io
   ignorePatterns:
     - private
     - templates
