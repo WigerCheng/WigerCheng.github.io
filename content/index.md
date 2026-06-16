@@ -1,6 +1,5 @@
 ---
-title: Welcome to Quartz
+title: Welcome to Wiger's Blog
 ---
 
-This is a blank Quartz installation.
-See the [documentation](https://quartz.jzhao.xyz) for how to get started.
+这里是Wiger的笔记总结。正在搬运建设中。

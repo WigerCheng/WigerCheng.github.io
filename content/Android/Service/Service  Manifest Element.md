@@ -44,6 +44,6 @@ title: Service在AndroidManifest的元素
 | android:isolatedProcess       |                      -                       | 服务是否在与系统其余部分隔离的特殊进程下运行                                                                                                         |
 | android:label                 |                      -                       | 给用户提供服务的名称。                                                                                                                               |
 | android:name                  |                    *必填                     | 服务的类名。如果简写`.MyService`以句点开头，则将用`<manifest>`指定的软件包名称。                                                                     |
-| android:permission            |                                              | 如果该值或者`<application>`的`permission`不为空，则启用该服务需要声明指定权限，否则`startService()`、`bindService()` 或 `stopService()` 将不起作用。 |
+| android:permission            |                      -                       | 如果该值或者`<application>`的`permission`不为空，则启用该服务需要声明指定权限，否则`startService()`、`bindService()` 或 `stopService()` 将不起作用。 |
 | android:process               |                      -                       | 运行服务的进程的名称。默认所有服务都是在应用的默认进程中执行，进程名和软件包包名一样。<br>的                                                         |
 | android:stopWithTask          |                    false                     | 如果任务Task的所有Activity都移除，是否自动停止服务。                                                                                                 |
