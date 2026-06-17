@@ -18,11 +18,11 @@ tags:
 
 ## 状态常量对照表
 
-| 常量 (Int)                                  | 说明     |
-| :---------------------------------------- | :----- |
-| `BluetoothAdapter.STATE_OFF` (10)         | 蓝牙已关闭  |
+| 常量 (Int)                                | 说明         |
+| :---------------------------------------- | :----------- |
+| `BluetoothAdapter.STATE_OFF` (10)         | 蓝牙已关闭   |
 | `BluetoothAdapter.STATE_TURNING_ON` (11)  | 蓝牙正在打开 |
-| `BluetoothAdapter.STATE_ON` (12)          | 蓝牙已打开  |
+| `BluetoothAdapter.STATE_ON` (12)          | 蓝牙已打开   |
 | `BluetoothAdapter.STATE_TURNING_OFF` (13) | 蓝牙正在关闭 |
 
 ## 代码
