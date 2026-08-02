@@ -29,7 +29,7 @@ public protocol Identifiable<ID> {
 ### 1. 使用UUID
 
 >[!tip]
-> 常用于内存的临时对象，确保每次创建实例都有唯一 ID。
+> 适用于内存的临时对象，确保每次创建实例都有唯一 ID。
 
 ```swift
 struct User: Identifiable {
@@ -41,7 +41,7 @@ struct User: Identifiable {
 ### 2.使用唯一业务主键
 
 >[!tip]
-> 常用于服务器返回或数据库的唯一实体主键
+> 使用于服务器返回或数据库的唯一实体主键
 
 ```swift
 struct Product: Identifiable {
