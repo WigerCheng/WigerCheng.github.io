@@ -1,8 +1,6 @@
 ---
 title: Android 接口定义语言 (AIDL)
 draft: true
-tags:
-  - Android
 ---
 
 1. 在需要使用aidl的module的build.gralde文件中添加`buildFeatures.aidl = true`来启用aidl。

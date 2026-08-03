@@ -1,7 +1,4 @@
 ---
-tags:
-  - Android
-  - Service
 title: Android 绑定服务
 draft: true
 ---

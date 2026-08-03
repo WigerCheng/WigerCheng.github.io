@@ -187,7 +187,7 @@ plugins:
       position: beforeBody
       priority: 20
   - source: github:quartz-community/tag-list
-    enabled: false
+    enabled: true
     layout:
       position: beforeBody
       priority: 30
@@ -223,13 +223,23 @@ plugins:
       position: afterBody
       priority: 10
   - source: github:quartz-community/footer
-    enabled: true
+    enabled: false
     options:
       links:
         GitHub: https://github.com/jackyzha0/quartz
         Discord Community: https://discord.gg/cRFFHYye7t
   - source: github:quartz-community/recent-notes
-    enabled: false
+    enabled: true
+    options:
+      title: 最近更新
+      limit: 8
+      showTags: true
+      hideTagPages: true
+      hideFolderPages: true
+    layout:
+      position: afterBody
+      priority: 10
+      condition: is-index
   - source: github:quartz-community/spacer
     enabled: true
     options: {}
@@ -246,10 +256,7 @@ plugins:
     enabled: true
     options:
       includeAll: false
-      includedProperties:
-        - description
-        - tags
-        - aliases
+      includedProperties: []
       excludedProperties: []
       hidePropertiesView: false
       delimiters: ---

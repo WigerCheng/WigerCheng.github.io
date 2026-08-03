@@ -1,7 +1,5 @@
 ---
 title: ViewModelStore分析
-tags:
-  - ViewModel
 ---
 ## ViewModelStore
 

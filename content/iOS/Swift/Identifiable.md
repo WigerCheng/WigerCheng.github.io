@@ -1,6 +1,4 @@
 ---
-tags:
-  - Swift
 title: Swift的Identifiable协议
 ---
 ## 核心概念

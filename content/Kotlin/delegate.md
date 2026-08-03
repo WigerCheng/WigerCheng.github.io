@@ -1,7 +1,5 @@
 ---
 title: Kotlin之委托
-tags:
-  - Kotlin
 ---
 >[!note] 委托
 >

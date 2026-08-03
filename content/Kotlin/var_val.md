@@ -1,7 +1,5 @@
 ---
 title: Kotlin的可变性与不可变性
-tags:
-  - Kotlin
 draft: true
 ---
 ## 基本类型

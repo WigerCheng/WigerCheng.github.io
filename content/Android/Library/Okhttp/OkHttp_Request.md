@@ -2,7 +2,6 @@
 title: OkHttp请求Request
 draft: true
 tags:
-  - Okhttp
   - Network
   - Android
 ---

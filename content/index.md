@@ -1,5 +1,6 @@
 ---
-title: Welcome to Wiger's Blog
+title: Wiger's Blog
+tags: []
 ---
 
-这里是Wiger的笔记总结。正在搬运建设中。
+欢迎来到 Wiger 的技术博客与笔记空间。这里记录了 Android、Kotlin、Java、HarmonyOS 等技术领域的知识沉淀与项目实践总结。

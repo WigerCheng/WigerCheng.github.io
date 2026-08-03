@@ -1,7 +1,5 @@
 ---
 title: Android圆形揭露动画
-tags:
-  - Animation
 ---
 >[!note]  圆形揭露动画
 > 圆形揭露动画，可以让一个View裁剪成一个圆形，并以指定的圆心做半径变化动画。

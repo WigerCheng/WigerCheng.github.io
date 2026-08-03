@@ -1,8 +1,5 @@
 ---
 title: Android 蓝牙状态监听
-tags:
-  - Android
-  - Bluetooth
 ---
 在Android系统中，当蓝牙的状态发生改变之后，系统会自动发送广播[BluetoothAdapter#ACTION_STATE_CHANGED](https://developer.android.com/reference/android/bluetooth/BluetoothAdapter#ACTION_STATE_CHANGED)。我们只需要注册一个BroadcastReceiver监听系统广播就可以实现对蓝牙状态的监听。
 

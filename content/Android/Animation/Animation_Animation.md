@@ -1,6 +1,4 @@
 ---
-tags:
-  - Animation
 title: Android视图动画
 ---
 

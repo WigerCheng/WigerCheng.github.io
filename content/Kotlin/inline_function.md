@@ -1,7 +1,5 @@
 ---
 title: Kotlin之内联函数
-tags:
-  - Kotlin
 ---
 >[!note] 内联函数
 >在 Kotlin 中通过 `inline-functions` (内联函数) 实现函数内联。

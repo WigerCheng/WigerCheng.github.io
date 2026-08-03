@@ -1,7 +1,5 @@
 ---
 title: Service
-tags:
-  - Android
 draft: true
 ---
 
