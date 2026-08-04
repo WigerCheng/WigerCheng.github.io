@@ -1,5 +1,7 @@
 ---
 title: ViewModelStore分析
+tags:
+  - Android/Jetpack
 ---
 ## ViewModelStore
 

@@ -1,5 +1,7 @@
 ---
 title: Android 序列化之 Parcelable
+tags:
+  - Android
 ---
 
 ## 📌 概述与核心结论

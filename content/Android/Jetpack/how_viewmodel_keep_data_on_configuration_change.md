@@ -2,6 +2,7 @@
 title: ViewModel 是如何在配置变化时保持数据不丢失的？
 tags:
   - ViewModel
+  - Android/Jetpack
 ---
 
 ## ViewModel描述
