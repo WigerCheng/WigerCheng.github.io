@@ -1,4 +1,4 @@
-#View #Scroll
+#View 
 # 实现View滑动的多种方式
 1. [[#使用 `layout()` 方法实现滑动]]
 2. [[#使用 `offsetLeftAndRight()` 与 `offsetTopAndBottom()`方法实现滑动]]

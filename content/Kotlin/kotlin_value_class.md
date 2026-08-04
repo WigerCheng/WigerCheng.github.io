@@ -2,7 +2,6 @@
 title: Kotlin Value Class：用低成本类型包装提升代码语义
 tags:
   - Kotlin
-  - ValueClass
 ---
 
 在业务代码里，我们经常会遇到这种情况：很多数据底层类型都一样，但业务含义完全不同。
