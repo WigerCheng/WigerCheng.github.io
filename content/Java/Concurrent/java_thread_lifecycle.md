@@ -1,14 +1,9 @@
 ---
 title: Java 线程生命周期
-draft: true
+draft: false
 tags:
   - Java/Concurrent
 ---
-> [!info] 线程
->
-> 对计算机来说每一个任务就是一个进程（Process），在每一个进程内部至少要有一个线程（Thread）是在运行中，有时线程也称为轻量级的进程。
-
-## 线程的生命周期
 
 ```text
        +----------+
@@ -33,20 +28,20 @@ tags:
 
 ```
 
-
-
 从图可知，线程的生命周期大体分为5个阶段
+
 - [[#NEW]]
 - [[#RUNNABLE]]
-- RUNNING
-- BLOCKED
-- TERMINATED
+- [[#RUNNING]]
+- [[#BLOCKED]]
+- [[#TERMINATED]]
 
 ## NEW
 
 当我们用new创建一个Thread对象的时候，**它并不处于执行状态**，可以理解成是一个普通的Java对象。
 
 NEW状态通过调用`start()`方法进入RUNNABLE状态。
+
 ## RUNNABLE
 
 当线程对象调用start方法进入RUNNABLE状态的时候，**此刻才真正地在JVM进程中创建了一个线程**。RUNNABLE是一个中间态，称之为可执行状态，就是它具备执行的资格，但需要等待CPU的调度。
@@ -55,3 +50,29 @@ NEW状态通过调用`start()`方法进入RUNNABLE状态。
 >
 >但是线程启动不等于就可以立即执行，线程是否运行要取决于CPU的调度。
 
+## RUNNING
+
+一旦CPU通过轮询或者其他方式从执行队列中选中了线程，**此时它才能真正地执行自己的逻辑代码**。
+
+在该状态中，线程的状态可以发生如下的变化：
+
+- 进入TERMINATED状态。*调用了stop方法或者判断某个逻辑标识*
+- 进入BLOCKED状态。*1. 调用了sleep方法，或者wait方法加入了waitSet中；2. 进行某个阻塞的IO操作（如网络数据的读写）；3. 获取某个锁资源，从而加入到该锁的阻塞队列。*
+- 进入RUNNABLE状态。*1. CPU的调度器轮询使线程放弃执行。2. 线程主动调用yield方法，放弃CPU执行权。*
+
+## BLOCKED
+
+在该状态中，线程的状态可以发生如下的变化：
+
+- 进入TERMINATED状态。*调用了stop方法或者意外死亡(JVM Crash)*。
+- 进入RUNNABLE状态。*1. 线程阻塞的操作结束（如读取了想要的数据字节）；2. 线程完成了指定时间的休眠；3. Wait中的线程被其他线程通过notify/notifyall唤醒；4. 线程获取到某个锁资源；5. 线程在阻塞阶段中被打断（如其他线程调用了interrupt方法)*
+
+## TERMINATED
+
+TERMINATED是一个线程的最终状态，在该状态的线程将不会切换到其他任何状态。一旦线程进入了TERMINATED状态，意味着该线程的整个生命周期都结束了。
+
+有下面这些情况会使线程进入TERMINATED状态：
+
+- 线程运行正常结束，结束生命周期。
+- 线程运行出错意外结束。
+- JVM Crash，导致所有的线程都结束。
