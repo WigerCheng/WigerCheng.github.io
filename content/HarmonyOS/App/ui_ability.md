@@ -1,6 +1,8 @@
 ---
 title: UIAbility
 draft: true
+tags:
+  - HarmonyOS/App
 ---
 
 UIAbility组件是一种包含UI的应用组件，主要用于和用户交互。它继承自Ability，提供UIAbility组件创建、销毁、前后台切换等生命周期回调，同时也具备后台通信能力。(有点类似Android的Activity)

@@ -1,5 +1,7 @@
 ---
 draft: true
+tags:
+  - HarmonyOS/ArkUI
 ---
 
 - @Link装饰的变量与其父组件中的数据源共享相同的值。

@@ -1,5 +1,7 @@
 ---
 draft: true
+tags:
+  - Android/Activity
 ---
 在Android中，Task（任务）是指用户在应用中进行某项操作时，所涉及的一系列 Activity 的集合。这些Activity按照打开的顺序存在一个栈中，我们称之为返回栈。
 

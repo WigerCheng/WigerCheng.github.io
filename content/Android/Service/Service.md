@@ -1,6 +1,8 @@
 ---
 title: Service
 draft: true
+tags:
+  - Android/Service
 ---
 
 Android系统提供了Service的系统组件可以让App在后台执行一些长时间的操作。如数据同步，资源下载，后台听歌，文件I/O同步等等吗还能和contentProvider进行交互。

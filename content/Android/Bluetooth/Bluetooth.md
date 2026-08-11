@@ -1,5 +1,7 @@
 ---
 draft: true
+tags:
+  - Android/Bluetooth
 ---
 如果要App使用蓝牙，必须首先在`Android Manifest`中声明蓝牙的权限。
 

@@ -1,3 +1,7 @@
+---
+tags:
+  - Other
+---
 [文档](https://protobuf.dev/programming-guides/proto3/)
 
 # 定义一个消息类型

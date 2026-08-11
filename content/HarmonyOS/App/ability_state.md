@@ -1,6 +1,8 @@
 ---
 title: AbilityStage组件管理器
 draft: true
+tags:
+  - HarmonyOS/App
 ---
 AbilityStage是一个Module级别的组件管理器，用于进行Module级别的资源预加载、线程创建等初始化操作，以及维护Module下的应用状态。
 

@@ -1,3 +1,7 @@
+---
+tags:
+  - Android/View
+---
 [[Paint]]
 
 ## 颜色填充

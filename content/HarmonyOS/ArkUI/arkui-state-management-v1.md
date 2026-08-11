@@ -3,6 +3,7 @@ title: ArkUI 状态管理V1
 draft: true
 tags:
   - "#StateV1"
+  - HarmonyOS/ArkUI
 ---
 ArkUI状态管理V1提供了多种装饰器，通过使用这些装饰器，状态变量不仅可以观察组件内的改变，还可以在不同组件层级间传递，比如父子组件、跨组件层级，也可以观察全局范围内的变化。
 

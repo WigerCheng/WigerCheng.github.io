@@ -1,6 +1,8 @@
 ---
 title: HarmonyOs权限管理
 draft: true
+tags:
+  - HarmonyOS
 ---
 在HarmonyOS中，系统根据应用的[APL等级](https://developer.huawei.com/consumer/cn/doc/harmonyos-guides/app-permission-mgmt-overview#%E6%9D%83%E9%99%90%E6%9C%BA%E5%88%B6%E4%B8%AD%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5)设置进程域和数据域标签。通过访问控制机制，限制数据访问范围，从机制上减少数据泄露风险。
 

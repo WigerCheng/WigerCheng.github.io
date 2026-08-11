@@ -1,6 +1,8 @@
 ---
 title: ArkTS接口
 draft: true
+tags:
+  - HarmonyOS/ArkTS
 ---
 
 # 什么是接口

@@ -1,6 +1,8 @@
 ---
 date: 2022-04-19T00:00:00Z
 title: Android MVP架构
+tags:
+  - Android/Architecture
 ---
 
 ## 什么是MVP？

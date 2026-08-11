@@ -2,6 +2,8 @@
 date: 2025-08-29T14:41:10+08:00
 draft: true
 title: Compose文本显示
+tags:
+  - Compose/组件
 ---
 > 当前使用的compose版本是1.9.4
 

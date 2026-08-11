@@ -1,5 +1,7 @@
 ---
 title: Android帧动画
+tags:
+  - Android/Animation
 ---
 >[!note] 帧动画
 >

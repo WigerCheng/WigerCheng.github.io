@@ -1,5 +1,7 @@
 ---
 title: jenv的使用
+tags:
+  - Other
 ---
 
 ## 什么是jenv？

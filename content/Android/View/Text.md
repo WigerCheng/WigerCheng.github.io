@@ -1,5 +1,7 @@
 ---
 draft: true
+tags:
+  - Android/View
 ---
 
 

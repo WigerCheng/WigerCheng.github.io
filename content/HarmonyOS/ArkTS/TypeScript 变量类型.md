@@ -1,5 +1,7 @@
 ---
 draft: true
+tags:
+  - HarmonyOS/ArkTS
 ---
 
 # 变量声明

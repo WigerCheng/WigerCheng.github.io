@@ -1,5 +1,7 @@
 ---
 title: Swift的Identifiable协议
+tags:
+  - iOS/Swift
 ---
 ## 核心概念
 

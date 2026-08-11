@@ -1,3 +1,7 @@
+---
+tags:
+  - Android/View
+---
 1. `Paint` 类的几个最常用的方法。具体是：
 
 - `Paint.setStyle(Style style)` 设置绘制模式

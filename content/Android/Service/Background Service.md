@@ -1,6 +1,8 @@
 ---
 title: Service之后台服务
 draft: true
+tags:
+  - Android/Service
 ---
 ## Service后台服务限制
 

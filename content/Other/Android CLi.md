@@ -2,6 +2,8 @@
 date: 2026-04-18T14:51:18+08:00
 draft: true
 title: Android Cli
+tags:
+  - Other
 ---
 ## 下载安装
 

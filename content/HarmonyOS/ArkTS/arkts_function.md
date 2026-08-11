@@ -1,5 +1,7 @@
 ---
 title: ArkTS函数
+tags:
+  - HarmonyOS/ArkTS
 ---
 ![[arkts_function.png]]
 

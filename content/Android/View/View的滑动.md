@@ -1,3 +1,7 @@
+---
+tags:
+  - Android/View
+---
 #View 
 # 实现View滑动的多种方式
 1. [[#使用 `layout()` 方法实现滑动]]

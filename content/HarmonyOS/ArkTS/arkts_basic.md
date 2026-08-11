@@ -1,6 +1,8 @@
 ---
 title: ArkTS语法
 draft: true
+tags:
+  - HarmonyOS/ArkTS
 ---
 ## 变量与常量
 

@@ -1,3 +1,7 @@
+---
+tags:
+  - Android/View
+---
 #View 
 # View的工作流程
 View的工作流程，指的就是measure、layout和draw。

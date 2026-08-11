@@ -1,5 +1,7 @@
 ---
 title: HarmonyOS
+tags:
+  - HarmonyOS
 ---
 ## Harmony应用的多Module机制
 

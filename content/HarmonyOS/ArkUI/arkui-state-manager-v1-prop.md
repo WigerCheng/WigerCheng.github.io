@@ -2,6 +2,7 @@
 title: "@Prop_父子单向同步"
 tags:
   - "#StateV1"
+  - HarmonyOS/ArkUI
 ---
 
 ## 原理

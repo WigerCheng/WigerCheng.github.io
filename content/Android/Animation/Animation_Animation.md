@@ -1,5 +1,7 @@
 ---
 title: Android视图动画
+tags:
+  - Android/Animation
 ---
 
 >[!note] Animation框架动画原理

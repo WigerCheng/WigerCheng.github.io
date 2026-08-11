@@ -1,3 +1,7 @@
+---
+tags:
+  - Android/View
+---
 # 什么是事件分发
 📐点击事件的事件分发，其实就是对`MotionEvent`事件的分发过程，即一个MotionEvent产生了以后，系统需要把这个事件传递给一个具体的View，而这个传递的过程就是分发过程。
 📐事件分发过程由三个重要的方法共同完成：`dispatchTouchEvent`、`onInterceptTouchEvent`、`onTouchEvent`。
