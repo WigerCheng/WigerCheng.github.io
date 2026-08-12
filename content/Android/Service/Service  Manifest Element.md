@@ -2,6 +2,7 @@
 title: Service在AndroidManifest的元素
 tags:
   - Android/Service
+draft: true
 ---
 在Android中，所有的Service都必须通过`<service>`标签在`AndroidManifest`中注册。
 
