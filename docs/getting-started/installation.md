@@ -4,14 +4,37 @@ aliases:
   - "setting up your GitHub repository"
 ---
 
-This page walks you through the full Quartz setup: from cloning the repository to previewing your site locally, then pushing it to GitHub.
+This page walks you through the full Quartz setup: from getting the source code to previewing your site locally, then pushing it to GitHub.
 
-## 1. Clone Quartz
+## 1. Get Quartz
+
+There are two ways to get started. Pick whichever you prefer:
+
+### Option A: Use the GitHub Template (Recommended)
+
+> [!tip] Why this option?
+> Using the template creates your own repository in one click — no need to reconfigure Git remotes later.
+
+1. Go to the [Quartz repository](https://github.com/jackyzha0/quartz) and click **Use this template** → **Create a new repository**
+2. Give your repository a name (e.g. `quartz`, `notes`, `garden`), choose public or private, then click **Create repository**
+3. Clone **your new repository** and enter the folder:
+
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+```
+
+### Option B: Clone Directly
+
+If you don't use GitHub or prefer a manual setup:
 
 ```bash
 git clone https://github.com/jackyzha0/quartz.git
 cd quartz
 ```
+
+> [!note]
+> With this option, you'll need to [[#Connect Your Local Clone|point the `origin` remote]] to your own repository later when you're ready to publish.
 
 ## 2. Install Dependencies
 
@@ -35,7 +58,7 @@ npx quartz create
 
 This will prompt you for:
 
-- A **template** (`default`, `obsidian`, `ttrpg`, `blog`) — pick the one that matches your use case. See [[create#Templates]] for details on each.
+- A **template** (`default`, `obsidian`, `ttrpg`, `blog`, `docs`) — pick the one that matches your use case. See [[create#Templates]] for details on each.
 - A **content strategy** — choose how to populate the `content/` folder:
   - **new**: Start with an empty folder
   - **copy**: Copy files from an existing folder (e.g. your Obsidian vault)
@@ -45,15 +68,13 @@ This will prompt you for:
 
 For non-interactive usage and more details, see the [[create|`quartz create` CLI reference]].
 
-## 4. Install Plugins
+## 4. Plugins
 
-The template you chose references community plugins that need to be installed:
+`npx quartz create` already installed the plugins your template uses: the default plugins are npm packages installed by `npm i`, and any Git plugins the template references are downloaded into `.quartz/plugins/`. If you later add Git plugins to `quartz.config.yaml` by hand, install them with:
 
 ```bash
 npx quartz plugin install --from-config
 ```
-
-This downloads and builds all plugins listed in `quartz.config.yaml` into `.quartz/plugins/`.
 
 > [!tip]
 > If some plugins fail to build, try refreshing them to their latest versions:
@@ -78,11 +99,14 @@ At this point you can [[authoring-content|start writing content]] in the `conten
 
 ## Setting Up Your GitHub Repository
 
-To publish your site, you'll need your own GitHub repository.
+> [!note]
+> If you used **Option A** (GitHub Template) in step 1, your repository already exists and `origin` is already set. You can skip straight to [[#Push Your Site]].
+
+To publish your site, you'll need your own GitHub repository. This section is for **Option B** (direct clone) users.
 
 ### Create the Repository
 
-Create a new repository on [GitHub.com](https://github.com/new). Do **not** initialize it with a README, license, or `.gitignore` — the Quartz clone already has these.
+Create a new repository on [GitHub.com](https://github.com/new). Do **not** initialize it with a README, license, or `.gitignore` — Quartz already includes these files, and duplicating them will cause merge conflicts on your first push.
 
 ![[github-init-repo-options.png]]
 
@@ -100,10 +124,10 @@ git remote -v
 
 # Point origin to your repository
 git remote set-url origin REMOTE-URL
-
-# Add the official Quartz repo as upstream (for future upgrades)
-git remote add upstream https://github.com/jackyzha0/quartz.git
 ```
+
+> [!tip]
+> You don't need to add an `upstream` remote manually — `npx quartz create` already configured it for you. The upstream remote is used by `npx quartz upgrade` to pull in future Quartz updates.
 
 ### Push Your Site
 
@@ -125,7 +149,8 @@ npx quartz sync
 > - `-d` or `--directory`: the content folder. This is normally just `content`
 > - `-v` or `--verbose`: print out extra logging information
 > - `--commit` or `--no-commit`: whether to make a `git` commit for your changes
-> - `--push` or `--no-push`: whether to push updates to your GitHub fork of Quartz
+> - `-m` or `--message`: the commit message (default: `Quartz sync: <date and time>`)
+> - `--push` or `--no-push`: whether to force-push updates to your GitHub fork of Quartz
 > - `--pull` or `--no-pull`: whether to try and pull in any updates from your GitHub fork (i.e. from other devices) before pushing
 
 ## Next Steps
